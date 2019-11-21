@@ -1,0 +1,19 @@
+{
+    "TableName": "alumnos",
+    "KeySchema": [
+        {
+            "AttributeName": "dni",
+            "KeyType": "HASH"
+        }
+    ],
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "dni",
+            "AttributeType": "S"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "ReadCapacityUnits": 1,
+        "WriteCapacityUnits": 1
+    }
+}
